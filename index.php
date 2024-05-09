@@ -2,6 +2,7 @@
 
 // Include the class file
 require('pet.php');
+require('dog.php');
 
 
 
@@ -26,3 +27,9 @@ $pet1 -> talk();
 $pet1 -> setName("Mark");
 
 echo $pet1 -> getName();
+
+$dog_1 = new Dog("John", "Brown");
+
+var_dump($dog_1);
+
+$dog_1 -> fetch();
